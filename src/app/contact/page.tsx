@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import Rectangle from '@/components/Rectangle';
 import Email from '@/components/Icons/Email';
 import Social from '@/components/Icons/Social';
+import Image from 'next/image';
 export default function ContactPage() {
   return (
     <main>
@@ -10,7 +11,7 @@ export default function ContactPage() {
         <Navbar /> 
         <Rectangle />
         <div className="mt-[55px] flex justify-center">
-          <img 
+          <Image 
             src="/Pro-Headshot.png" 
             alt="Pro-Headshot" 
             className="w-[300px] h-[300px] rounded-full object-cover z-10"/>

@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 
 export default function About() {
     return (
@@ -6,7 +7,7 @@ export default function About() {
         <header>
             <Navbar />
             <div className="flex justify-center mt-[100px]">
-                <img src="/Pro-Headshot.png" 
+                <Image src="/Pro-Headshot.png" 
                 alt="Pro-Headshot"
                 className="w-[200px] h-[200px] rounded-full 
                 object-cover z-10" />
