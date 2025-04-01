@@ -14,7 +14,7 @@ const tiles = [
         name: "Website Code Base",
         description: "This is the code base for the website. I utilzied react, next.js, typescript, and tailwind css.",
         icon: <ReactLogo />,
-        iconLink: "https://github.com/joshua-davis-dev/portfolio",
+        iconLink: "https://github.com/jack-aviles/website",
     },
 ]
 
@@ -25,13 +25,13 @@ export default function Portfolio() {
                 <Navbar />
             </header>
             
-            <div className="pt-24 px-[300px] mb-8 text-center">
-                <h1 className="text-4xl font-bold">Welcome to my Portfolio</h1>
-                <p className="text-gray-500">Here are some of the projects I have worked on by utlizing various tools like Figma, React, Next.js, and Tailwind CSS. and Cursor IDE.</p>
+            <div className="pt-24 px-4 md:px-8 lg:px-16 xl:px-[300px] mb-8 text-center">
+                <h1 className="text-3xl md:text-4xl font-bold">Welcome to my Portfolio</h1>
+                <p className="text-gray-500 mt-2">Here are some of the projects I have worked on by utlizing various tools like Figma, React, Next.js, and Tailwind CSS.</p>
             </div>
             
-            <div className="px-[300px]">
-                <div className="grid grid-cols-2 gap-8">
+            <div className="px-4 md:px-8 lg:px-16 xl:px-[300px]">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {tiles.map((tile, index) => (
                         <Tile key={index} 
                         name={tile.name} 
