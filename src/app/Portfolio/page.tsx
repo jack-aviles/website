@@ -20,18 +20,18 @@ const tiles = [
 
 export default function Portfolio() {
     return (
-        <div className="relative min-h-screen">
+        <div className="relative min-h-screen overflow-x-hidden">
             <header>
                 <Navbar />
             </header>
             
             <div className="pt-24 px-4 md:px-8 lg:px-16 xl:px-[300px] mb-8 text-center">
-                <h1 className="text-3xl md:text-4xl font-bold">Welcome to my Portfolio</h1>
-                <p className="text-gray-500 mt-2">Here are some of the projects I have worked on by utlizing various tools like Figma, React, Next.js, and Tailwind CSS.</p>
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">Welcome to my Portfolio</h1>
+                <p className="text-sm sm:text-base text-gray-500 mt-2">Here are some of the projects I have worked on by utlizing various tools like Figma, React, Next.js, and Tailwind CSS.</p>
             </div>
             
-            <div className="px-4 md:px-8 lg:px-16 xl:px-[300px]">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="px-4 md:px-8 lg:px-16 xl:px-[300px] pb-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                     {tiles.map((tile, index) => (
                         <Tile key={index} 
                         name={tile.name} 
