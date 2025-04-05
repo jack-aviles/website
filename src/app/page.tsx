@@ -21,8 +21,8 @@ export default function Home() {
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 mt-6 text-center">Welcome to My Website!</h1>
           <p className="text-sm sm:text-base md:text-lg mb-6 max-w-md text-center">
-            I&apos;m a Digital Service & CX Analyst focused on improving user journeys through strategy, data, and design. 
-            Currently expanding my expertise in front-end development and AI-driven UX.
+            I&apos;m a Digital Service & CX Analyst committed to enhancing user journeys through strategic thinking, data analysis, and thoughtful design. 
+            I am currently expanding my knowledge in front-end development and exploring the integration of AI into UX.
           </p>
           <a href="/resume" className="inline-block">
             <button className="px-6 sm:px-8 md:px-12 lg:px-20 py-2 md:py-3 bg-[#0a192f] text-white text-lg sm:text-xl md:text-2xl font-medium rounded-full hover:bg-white hover:text-[#0a192f] transition-colors">

@@ -6,13 +6,13 @@ import ReactLogo from "@/components/React";
 const tiles = [
     {
         name: "Figma Mockup for Website",
-        description: "In this project, I created a figma mockup for a website. I used figma to design the website. You will also find a functional prototype I created by using Figma.",
+        description: "For this project, I used Figma to design a website and put together a working prototype so you can get a feel for how it all comes together.",
         icon: <Figma />,
         iconLink: "https://www.figma.com/proto/95yI9NRdyEAJdwauwVrXiH/Professional-Website-Mockup?node-id=0-1&t=uAAfmbnLv4uK9V5A-1",
     },
     {
         name: "Website Code Base",
-        description: "This is the code base for the website. I utilzied react, next.js, typescript, and tailwind css.",
+        description: "Here is the codebase for the site — I used React, Next.js, TypeScript, and styled everything with Tailwind CSS.",
         icon: <ReactLogo />,
         iconLink: "https://github.com/jack-aviles/website",
     },
