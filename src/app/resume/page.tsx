@@ -14,6 +14,7 @@ export default function ResumePage() {
   return (
     <main className="min-h-screen flex flex-col">
       <Navbar />
+      <div className="page-content">
       <div className="pt-24 px-4 sm:px-8 flex flex-col items-center flex-grow">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
           <a 
@@ -34,6 +35,7 @@ export default function ResumePage() {
           </a>
         </div>
         
+        
         <div className="w-full max-w-5xl h-[calc(100vh-180px)] border border-gray-300 rounded-lg overflow-hidden">
           {isMounted && !pdfError ? (
             <iframe 
@@ -52,6 +54,7 @@ export default function ResumePage() {
             </div>
           )}
         </div>
+      </div>
       </div>
     </main>
   );

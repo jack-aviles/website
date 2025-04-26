@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
+
 export default function Navbar() {
     const pathname = usePathname();
     const isHomePage = pathname === "/";
@@ -20,8 +21,9 @@ export default function Navbar() {
     return (
         <nav className="fixed top-0 left-0 right-0 pt-4 pb-4 w-full z-50 bg-transparent">
             <div className="flex justify-between items-center px-4 md:px-8 lg:justify-center">
+                {/* Home Link - The house icon that takes users to the homepage */}
                 <Link 
-                    href="/" 
+                    href="/" prefetch={true}
                     className={`block pb-2 mr-8 lg:mr-16 ${isHomePage ? "border-b-2 border-[#0a192f]" : ""}`}
                 >
                     <svg width="38" height="38" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +31,7 @@ export default function Navbar() {
                     </svg>
                 </Link>
                 
-                {/* Mobile menu button */}
+                {/* Mobile menu button - This toggles the mobile menu (not a Link) */}
                 <button 
                     className="md:hidden"
                     onClick={() => setMenuOpen(!menuOpen)}
@@ -39,12 +41,12 @@ export default function Navbar() {
                     </svg>
                 </button>
                 
-                {/* Desktop menu */}
+                {/* Desktop Navigation Links - These appear on medium and larger screens */}
                 <ul className="hidden md:flex items-center space-x-8 text-[24px] lg:text-[30px]">
                     {navItems.map(item => (
                         <li key={item.path}>
                             <Link 
-                                href={item.path} 
+                                href={item.path} prefetch={true}
                                 className={`hover:underline hover:text-[#0a192f] hover:underline-offset-2 ${
                                     pathname === item.path ? "underline underline-offset-2 text-[#0a192f] shadow-lg" : ""
                                 }`}
@@ -56,13 +58,13 @@ export default function Navbar() {
                 </ul>
             </div>
             
-            {/* Mobile menu */}
+            {/* Mobile Navigation Links - These appear only when the menu is open on small screens */}
             {menuOpen && (
                 <ul className="md:hidden flex flex-col items-center space-y-4 pt-4 pb-2 text-[20px] border-t mt-4 bg-white">
                     {navItems.map(item => (
                         <li key={item.path}>
                             <Link 
-                                href={item.path} 
+                                href={item.path} prefetch={true}
                                 className={`hover:underline hover:text-[#0a192f] hover:underline-offset-2 ${
                                     pathname === item.path ? "underline underline-offset-2 text-[#0a192f] shadow-lg" : ""
                                 }`}
@@ -75,6 +77,7 @@ export default function Navbar() {
                 </ul>
             )}
             
+            {/* Horizontal line below the navbar */}
             <div className="fixed top-[65px] w-full h-[1px] bg-[#0a192f]"></div>
         </nav>
     )

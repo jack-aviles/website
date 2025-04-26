@@ -12,4 +12,15 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1;}
+}
 
+.page-content {
+  animation: fadeIn 2.0s ease-in-out;
+}
+
+.content-fade{
+  animation: fadeIn 2.0s ease-in-out;
+}

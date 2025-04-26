@@ -6,8 +6,10 @@ export default function Home() {
   return (
     <main className="overflow-x-hidden">
       <section className="flex flex-col items-center justify-center min-h-screen p-4 relative">
-        <Rectangle />
+        
         <Navbar />
+        <Rectangle />
+        <div className="page-content">  
         <div className="w-full max-w-4xl mx-auto flex flex-col items-center px-4 sm:px-6 md:px-8 mt-16 sm:mt-20 md:mt-24">
           <div className="relative w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] md:w-[280px] md:h-[280px] lg:w-[330px] lg:h-[330px]">
             <Image 
@@ -29,6 +31,7 @@ export default function Home() {
               Resume
             </button>
           </a>
+        </div>
         </div>
       </section>
     </main>

@@ -24,6 +24,7 @@ export default function Portfolio() {
             <header>
                 <Navbar />
             </header>
+            <div className="page-content">
             
             <div className="pt-24 px-4 md:px-8 lg:px-16 xl:px-[300px] mb-8 text-center">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">Welcome to my Portfolio</h1>
@@ -40,6 +41,7 @@ export default function Portfolio() {
                         iconLink={tile.iconLink} />
                     ))}
                 </div>
+            </div>
             </div>
         </div>  
     )
