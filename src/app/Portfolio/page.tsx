@@ -8,7 +8,7 @@ const tiles = [
         name: "Figma Mockup for Website",
         description: "For this project, I used Figma to design a website and put together a working prototype so you can get a feel for how it all comes together.",
         icon: <Figma />,
-        iconLink: "https://www.figma.com/proto/95yI9NRdyEAJdwauwVrXiH/Professional-Website-Mockup?node-id=0-1&t=uAAfmbnLv4uK9V5A-1",
+        iconLink: "https://www.figma.com/files/team/1261386665384968444/project/378733651/Professional-Website-Mockup?fuid=1261386663617739075",
     },
     {
         name: "Website Code Base",
