@@ -19,7 +19,7 @@ export default function Navbar() {
     ];
     
     return (
-        <nav className="fixed top-0 left-0 right-0 pt-4 pb-4 w-full z-50 bg-transparent">
+        <nav className="fixed top-0 left-0 w-full z-50" style={{ background: "#F5F2EB" }}>
             <div className="flex justify-between items-center px-4 md:px-8 lg:justify-center">
                 {/* Home Link - The house icon that takes users to the homepage */}
                 <Link 
@@ -78,7 +78,7 @@ export default function Navbar() {
             )}
             
             {/* Horizontal line below the navbar */}
-            <div className="fixed top-[65px] w-full h-[1px] bg-[#0a192f]"></div>
+            <div className="fixed top-[45px] w-full h-[1px] bg-[#0a192f] z-50" ></div>
         </nav>
     )
 }

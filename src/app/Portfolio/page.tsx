@@ -1,48 +1,44 @@
 import Navbar from "@/components/Navbar";
-import Tile from "@/components/Tile";
-import Figma from "@/components/Figma";
-import ReactLogo from "@/components/React";
-
-const tiles = [
-    {
-        name: "Figma Mockup for Website",
-        description: "For this project, I used Figma to design a website and put together a working prototype so you can get a feel for how it all comes together.",
-        icon: <Figma />,
-        iconLink: "https://www.figma.com/files/team/1261386665384968444/project/378733651/Professional-Website-Mockup?fuid=1261386663617739075",
-    },
-    {
-        name: "Website Code Base",
-        description: "Here is the codebase for the site — I used React, Next.js, TypeScript, and styled everything with Tailwind CSS.",
-        icon: <ReactLogo />,
-        iconLink: "https://github.com/jack-aviles/website",
-    },
-]
+import PortfolioEntry from "./PortfolioEntry";
+import { portfolioData } from "./portfolioData";
+import { PortfolioItemContent } from "./portfolio";
 
 export default function Portfolio() {
     return (
-        <div className="relative min-h-screen overflow-x-hidden">
-            <header>
-                <Navbar />
+        <div className="min-h-screen overflow-x-hidden">
+            <Navbar />
+            
+            
+            <header className="pt-24 pb-16 px-4 text-center">
+                <div className="max-w-4xl mx-auto">
+                    <h1 className="text-4xl md:text-6xl font-light tracking-wide mb-6">PORTFOLIO</h1>
+                    <p className="text-lg md:text-xl text-gray-600 mb-4">A curated selection of design and development work.</p>
+                    <p className="text-base text-gray-500 ">Scroll to explore →</p>
+                </div>
             </header>
-            <div className="page-content">
-            
-            <div className="pt-24 px-4 md:px-8 lg:px-16 xl:px-[300px] mb-8 text-center">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">Welcome to my Portfolio</h1>
-                <p className="text-sm sm:text-base text-gray-500 mt-2">Here are some of the projects I have worked on by utlizing various tools like Figma, React, Next.js, and Tailwind CSS.</p>
-            </div>
-            
-            <div className="px-4 md:px-8 lg:px-16 xl:px-[300px] pb-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                    {tiles.map((tile, index) => (
-                        <Tile key={index} 
-                        name={tile.name} 
-                        description={tile.description}
-                        icon={tile.icon}
-                        iconLink={tile.iconLink} />
+
+            {/* Portfolio Items */}
+            <main className="pb-20 ">
+                <div className="max-w-7xl mx-auto px-4 border-b border-black">
+                    {portfolioData.map((item: PortfolioItemContent, index) => (
+                        <div
+                            key={item.key}
+                            className={`${index !== portfolioData.length - 1 ? "border-b border-black" : ""}`}
+                        >
+                            <PortfolioEntry
+                                key={item.key}
+                                title={item.title}
+                                description={item.description}
+                                links={item.links}
+                                logo={item.logo}
+                                reverse={index % 2 === 1}
+                            />
+                        </div>
                     ))}
                 </div>
-            </div>
-            </div>
-        </div>  
+            </main>
+
+
+        </div>
     )
 }
