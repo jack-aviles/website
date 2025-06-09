@@ -21,7 +21,7 @@ export default function ContactPage() {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone />
-                <span className="text-lg text-gray-900">Phone</span>
+                <span className="text-lg text-gray-900">914-772-0362</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Social />
