@@ -18,7 +18,7 @@ export default function ResumePage() {
       <div className="pt-24 px-4 sm:px-8 flex flex-col items-center flex-grow">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
           <a 
-            href="/Resume.pdf" 
+            href= "/Resume.pdf"
             download="Jack-Aviles-Resume.pdf"
             className="px-10 py-2 bg-[#0a192f] text-white rounded-full hover:bg-[#172a46] transition-colors"
           >
