@@ -1,7 +1,7 @@
 export default function Rectangle() {
     return (
     <div 
-    className="absolute w-[1440px] h-[193px] max-w-full"
+    className="absolute w-full h-[193px] left-0 right-0"
     style={{
       background: 'linear-gradient(to right, #96A5B4 50%, #FFFFFF 100%)',
       top: 'calc(50% - 193px/2 - 100px)',

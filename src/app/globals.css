@@ -18,9 +18,9 @@ body {
 }
 
 .page-content {
-  animation: fadeIn 2.0s ease-in-out;
+  animation: fadeIn 1.0s ease-in-out;
 }
 
 .content-fade{
-  animation: fadeIn 2.0s ease-in-out;
+  animation: fadeIn 1.0s ease-in-out;
 }
